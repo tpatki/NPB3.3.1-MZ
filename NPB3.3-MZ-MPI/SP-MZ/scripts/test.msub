@@ -1,0 +1,11 @@
+#!/bin/bash
+#MSUB -lpartition=sierra
+#MSUB -A asccasc
+#MSUB -l nodes=64
+#MSUB -q pbatch
+#MSUB -l walltime=01:15:00
+
+#Call the child script that does the runs
+
+export OMP_NUM_THREADS=16
+./runSP-MZ.sh 4 64 16 16
