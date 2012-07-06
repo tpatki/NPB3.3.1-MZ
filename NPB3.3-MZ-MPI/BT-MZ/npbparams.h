@@ -1,4 +1,4 @@
-c NPROCS = 1 CLASS = D
+c NPROCS = 32 CLASS = C
 c  
 c  
 c  This file is generated automatically by the setparams utility.
@@ -6,27 +6,27 @@ c  It sets the number of processors and the class of the NPB
 c  in this directory. Do not modify it by hand.
 c  
         character class
-        parameter (class='D')
+        parameter (class='C')
         integer num_procs, num_procs2
-        parameter (num_procs=1, num_procs2=1)
+        parameter (num_procs=32, num_procs2=32)
         integer x_zones, y_zones
-        parameter (x_zones=32, y_zones=32)
+        parameter (x_zones=16, y_zones=16)
         integer gx_size, gy_size, gz_size, niter_default
-        parameter (gx_size=1632, gy_size=1216, gz_size=34)
+        parameter (gx_size=480, gy_size=320, gz_size=28)
         parameter (niter_default=100)
         integer problem_size
-        parameter (problem_size = 98)
+        parameter (problem_size = 57)
         integer max_xysize, max_xybcsize
         integer proc_max_size, proc_max_size5, proc_max_bcsize
-        parameter (max_xysize=2001536)
-        parameter (max_xybcsize=874880)
+        parameter (max_xysize=4973)
+        parameter (max_xybcsize=4130)
         parameter (proc_max_size=max_xysize*gz_size)
         parameter (proc_max_size5=proc_max_size*5)
         parameter (proc_max_bcsize=max_xybcsize*(gz_size-2))
         integer max_numzones
-        parameter (max_numzones=1024)
+        parameter (max_numzones=9)
         double precision dt_default, ratio
-        parameter (dt_default = 0.00002d0, ratio = 4.5d0)
+        parameter (dt_default = 0.0001d0, ratio = 4.5d0)
         integer start1, start5, qstart_west, qstart_east
         integer qstart_south, qstart_north, qoffset
         integer qcomm_size, qstart2_west, qstart2_east
