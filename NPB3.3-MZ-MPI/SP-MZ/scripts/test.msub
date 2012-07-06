@@ -1,11 +1,12 @@
 #!/bin/bash
-#MSUB -lpartition=sierra
+#MSUB -lpartition=cab
 #MSUB -A asccasc
-#MSUB -l nodes=64
+#MSUB -l nodes=5
 #MSUB -q pbatch
-#MSUB -l walltime=01:15:00
+#MSUB -l walltime=00:10:00
 
 #Call the child script that does the runs
 
-export OMP_NUM_THREADS=16
-./runSP-MZ.sh 4 64 16 16
+export OMP_NUM_THREADS=3
+#./runSP-MZ.sh 4 256 16 16 
+srun --nodes=5 --ntasks=5 -o spmz5.out -e spmz5.err ../../bin/sp-mz.C.5

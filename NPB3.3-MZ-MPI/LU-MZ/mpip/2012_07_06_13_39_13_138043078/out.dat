@@ -1,0 +1,80 @@
+mpiP: 
+mpiP: mpiP: mpiP V3.3.0 (Build Nov  2 2011/14:57:14)
+mpiP: Direct questions and errors to mpip-help@lists.sourceforge.net
+mpiP: 
+mpiP: 
+mpiP: Storing mpiP output in [./lu-mz.C.2.2.15831.1.mpiP].
+mpiP: 
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-MPI) - LU-MZ MPI+OpenMP Benchmark
+
+ Number of zones:   4 x   4
+ Iterations: 150    dt:   2.000000
+ Number of active processes:     2
+
+ Use the default load factors with threads
+ Total number of threads:     32  ( 16.0 threads/process)
+
+ Calculated speedup =     32.00
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  150
+
+ Verification being performed for class C
+ Accuracy setting for epsilon =  0.1000000000000E-07
+ ITMAX does not match the reference value of   250
+ Comparison of RMS-norms of residual
+ FAILURE:  1   0.6723537993304E+05 0.4108743427233E+05 0.6363976267635E+00
+ FAILURE:  2   0.5903224873680E+04 0.3439004802235E+04 0.7165503432399E+00
+ FAILURE:  3   0.1643276785759E+05 0.9961331392486E+04 0.6496557749279E+00
+ FAILURE:  4   0.1311951083769E+05 0.8321426758084E+04 0.5765939206207E+00
+ FAILURE:  5   0.1075470108915E+06 0.7463792419218E+05 0.4409164249339E+00
+ Comparison of RMS-norms of solution error
+ FAILURE:  1   0.4252277133620E+04 0.3429276307955E+04 0.2399925674567E+00
+ FAILURE:  2   0.2983658762803E+03 0.2336680861825E+03 0.2768790173907E+00
+ FAILURE:  3   0.1022492322911E+04 0.8216363109621E+03 0.2444585387347E+00
+ FAILURE:  4   0.8924459623124E+03 0.7143809828225E+03 0.2492577262994E+00
+ FAILURE:  5   0.8606305564320E+04 0.7057470798773E+04 0.2194603151339E+00
+ Comparison of surface integral
+ FAILURE:      0.1371819228214E+05 0.1125826349653E+05 0.2184998411498E+00
+ Verification failed
+
+
+ LU-MZ Benchmark Completed.
+ Class           =                        C
+ Size            =            480x  320x 28
+ Iterations      =                      150
+ Time in seconds =                    18.82
+ Total processes =                        2
+ Total threads   =                       32
+ Mop/s total     =                 61222.43
+ Mop/s/thread    =                  1913.20
+ Operation type  =           floating point
+ Verification    =             UNSUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              06 Jul 2012
+
+ Compile options:
+    F77          = mpif77
+    FLINK        = $(F77)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fPIC -fopenmp 
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
